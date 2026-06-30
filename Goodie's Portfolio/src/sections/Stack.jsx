@@ -19,8 +19,8 @@ function Stack() {
     { name: "Tailwind", icon: <SiTailwindcss /> },
     { name: "Git", icon: <SiGit /> },
     { name: "GitHub", icon: <SiGithub /> },
-    { name: "Vite", icon: <SiVite /> },
-    { name: "Figma", icon: <SiFigma /> }
+    { name: "Vite", icon: <SiVite /> }
+    // { name: "Figma", icon: <SiFigma /> }
   ];
 
   return (
