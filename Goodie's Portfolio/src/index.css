@@ -1,7 +1,24 @@
 @import "tailwindcss";
+
+/* Jersey Font */
 @font-face {
   font-family: "Jersey";
   src: url("./assets/fonts/Jersey20-Regular.ttf") format("truetype");
+}
+
+/* floating text animation */
+.floating-text {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 :root {

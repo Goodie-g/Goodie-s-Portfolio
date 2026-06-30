@@ -16,8 +16,8 @@ function Intro() {
         <section className="flex justify-start pt-12">
             <div className="flex flex-col items-center">
                 <h1>Hi! I'm <span style={{ fontFamily: "Jersey", color: "#58c4dc"}}
-                className="text-5xl">Godluck John Mbise</span></h1>
-                <h3 >Self Taught Frontend Developer.</h3>
+                className="text-5xl floating-text inline-block">Godluck John Mbise</span></h1>
+                <h3 style={{fontSize: "1.2rem"}}>Self Taught Frontend Developer.</h3>
                 <div className="flex flex-row gap-2 ">
                     { contactIcons.map((contactIcon) => (
                         <div

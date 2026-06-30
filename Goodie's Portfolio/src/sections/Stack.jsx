@@ -24,16 +24,18 @@ function Stack() {
   ];
 
   return (
-    <div className="flex gap-2 justify-center">
+    <div className="flex flex-col gap-2 justify-center mt-36">
         <h2 style={{ display:"block"}}>Languages and Tools</h2>
-      {skills.map((skill) => (
-        <div
-          key={skill.name}
-          className="flex flex-col items-center gap-2"
-        >
-          <span className="text-2xl">{skill.icon}</span>
-        </div>
-      ))}
+      <div className="flex gap-2 justify-center">
+        {skills.map((skill) => (
+          <div
+            key={skill.name}
+            className="flex flex-col items-center gap-2"
+          >
+            <span className="text-2xl">{skill.icon}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
