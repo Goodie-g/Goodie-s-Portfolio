@@ -32,7 +32,7 @@ function Stack() {
             key={skill.name}
             className="flex flex-col items-center gap-2"
           >
-            <span className="text-2xl">{skill.icon}</span>
+            <span className="text-2xl active:scale-95 size-[30px] max-[1024px]:size-[26px] max-[640px]:size-[24px] max-[384px]:size-[22px] hover:scale-108 max-[1024]:hover:scale-105 transition-normal transition duration-200 hover:brightness-125">{skill.icon}</span>
           </div>
         ))}
       </div>
