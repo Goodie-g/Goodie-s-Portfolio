@@ -25,7 +25,7 @@ function Stack() {
 
   return (
     <div className="flex flex-col gap-2 justify-center mt-36">
-        <h2 style={{ display:"block"}}>Languages and Tools</h2>
+        <h2 className="text-xl block">Languages and Tools:</h2>
       <div className="flex gap-2 justify-center">
         {skills.map((skill) => (
           <div

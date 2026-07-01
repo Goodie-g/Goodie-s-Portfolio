@@ -1,6 +1,6 @@
 function Projects() {
     return(
-        <div>Projects go here</div>
+        <h2>Projects:</h2>
     )
 }
 

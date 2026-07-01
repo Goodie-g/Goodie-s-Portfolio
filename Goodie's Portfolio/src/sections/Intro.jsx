@@ -5,6 +5,8 @@ import {
   FaXTwitter
 } from "react-icons/fa6";
 
+import profileImg from "../assets/profile.jpg"
+
 function Intro() {
     const contactIcons = [
         { name: "Github", icon: <FaGithub /> },
@@ -19,7 +21,7 @@ function Intro() {
                     className="text-6xl floating-text inline-block bg-[radial-gradient(circle,#8fe8f7_20%,#58c4dc_55%,#24718c_100%)] bg-clip-text text-transparent"
                     >Godluck John Mbise</span>
                 </h1>
-                <h3 style={{fontSize: "1.2rem"}}>Self Taught Frontend Developer.</h3>
+                <h3 className="text-xl">Self Taught Frontend Developer.</h3>
                 <div className="flex flex-row gap-2 ">
                     { contactIcons.map((contactIcon) => (
                         <div
@@ -31,6 +33,7 @@ function Intro() {
                     ))}
                 </div>
             </div>
+            <img src={profileImg} alt="Goodie" />
         </section>
     )
 }
