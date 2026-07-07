@@ -1,6 +1,8 @@
 function Projects() {
     return(
-        <h2>Projects:</h2>
+        <section id='Projects'>
+            <h2>Projects:</h2>
+        </section>
     )
 }
 

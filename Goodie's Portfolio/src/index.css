@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+}
+
 /* Jersey Font */
 @font-face {
   font-family: "Jersey";

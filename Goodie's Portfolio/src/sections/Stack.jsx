@@ -24,7 +24,7 @@ function Stack() {
   ];
 
   return (
-    <div className="flex flex-col gap-2 justify-center mt-36">
+    <section className="flex flex-col gap-2 justify-center mt-36" id='Languages-&-Tools'>
         <h2 className="text-xl block">Languages and Tools:</h2>
       <div className="flex gap-2 justify-center">
         {skills.map((skill) => (
@@ -36,7 +36,7 @@ function Stack() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
