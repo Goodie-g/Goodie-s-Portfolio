@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <header className="flex justify-center">
+        <header className="flex justify-center mt-[1rem]">
             <nav className="flex flex-row gap-4">
                 <HeaderItem value= 'Languages & Tools' href='#Languages-&-Tools' />
                 <HeaderItem value= 'Projects' href='#Projects' />
