@@ -1,12 +1,31 @@
+import { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
+
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <header className="flex justify-center mt-[1rem]">
-            <nav className="flex flex-row gap-4">
+            <nav className="flex-row gap-4 text-sm md:text-lg lg:text-xl hidden md:flex">
                 <HeaderItem value= 'Languages & Tools' href='#Languages-&-Tools' />
                 <HeaderItem value= 'Projects' href='#Projects' />
                 <HeaderItem value= 'About' href='#About' />
                 {/* <HeaderItem value= 'Contact' href='#Contact' /> */}
             </nav>
+
+            {isOpen && (
+                <nav className="absolute top-20 left-0 w-full bg-black flex flex-col items-center py-8 gap-6 md:hidden z-100">
+                    <a href="#Home">Home</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#About">About</a>
+                    <a href="#Contact">Contact</a>
+                </nav>
+            )}
+            <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="md:hidden text-3xl"
+            >
+                {isOpen ? <FiX /> : <FiMenu />}
+            </button>
         </header>
     )
 }
