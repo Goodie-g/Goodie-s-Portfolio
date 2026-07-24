@@ -4,8 +4,8 @@ import { FiMenu, FiX } from "react-icons/fi";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <header className="flex justify-center mt-[1rem]">
-            <nav className="flex-row gap-4 text-sm md:text-lg lg:text-xl hidden md:flex">
+        <header className="flex md:justify-center justify-end mt-[1rem] bg-[#16171d]">
+            <nav className="md:flex flex-row gap-4 text-sm md:text-lg lg:text-xl hidden bg-inherit">
                 <HeaderItem value= 'Languages & Tools' href='#Languages-&-Tools' />
                 <HeaderItem value= 'Projects' href='#Projects' />
                 <HeaderItem value= 'About' href='#About' />
@@ -14,15 +14,15 @@ const Header = () => {
 
             {isOpen && (
                 <nav className="absolute top-20 left-0 w-full bg-black flex flex-col items-center py-8 gap-6 md:hidden z-100">
-                    <a href="#Home">Home</a>
-                    <a href="#Projects">Projects</a>
-                    <a href="#About">About</a>
-                    <a href="#Contact">Contact</a>
+                    <HeaderItem value= 'Languages & Tools' href='#Languages-&-Tools' />
+                    <HeaderItem value= 'Projects' href='#Projects' />
+                    <HeaderItem value= 'About' href='#About' />
+                    {/* <HeaderItem value= 'Contact' href='#Contact' /> */}
                 </nav>
             )}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="md:hidden text-3xl"
+                className="md:hidden text-3xl mr-[1rem]"
             >
                 {isOpen ? <FiX /> : <FiMenu />}
             </button>
