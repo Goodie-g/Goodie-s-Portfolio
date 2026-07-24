@@ -1,8 +1,7 @@
 import {
   FaGithub,
   FaLinkedin,
-  FaInstagram,
-  FaBluesky
+  FaInstagram
 } from "react-icons/fa6";
 
 import profileImg from "../assets/profile.jpg"
@@ -11,8 +10,7 @@ function Intro() {
     const contactIcons = [
         { name: "Github", icon: <FaGithub />, link: "https://github.com/Goodie-g", target: "_blank", rel: "noopener noreferrer" },
         { name: "Linked", icon: <FaLinkedin />, link: "https://www.linkedin.com/in/godluck-john-mbise-b8aab8323/", target: "_blank", rel: "noopener noreferrer" },
-        { name: "Instagram", icon: <FaInstagram />, link: "https://www.instagram.com/goodie.dev/", target: "_blank", rel: "noopener noreferrer" },
-        { name: "Bluesky", icon: <FaBluesky />, link: "https://bsky.app/profile/goodiedev.bsky.social", target: "_blank", rel: "noopener noreferrer" }
+        { name: "Instagram", icon: <FaInstagram />, link: "https://www.instagram.com/goodie.dev/", target: "_blank", rel: "noopener noreferrer" }
     ]
 
     return (
@@ -41,7 +39,7 @@ function Intro() {
                     ))}
                 </div>
             </div>
-            <img src={profileImg} alt="Goodie" className="rounded-full w-2xs" />
+            <img src={profileImg} alt="Goodie" className="rounded-full w-2xs relative top-78" />
         </section>
     )
 }
