@@ -41,7 +41,7 @@ function Intro() {
                     ))}
                 </div>
             </div>
-            <img src={profileImg} alt="Goodie" className="rounded-full w-2xs relative top-78" />
+            <img src={profileImg} alt="Goodie" className="rounded-full w-2xs" />
         </section>
     )
 }
