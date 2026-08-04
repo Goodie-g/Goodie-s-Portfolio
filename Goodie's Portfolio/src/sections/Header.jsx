@@ -4,7 +4,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <header className="flex md:justify-center justify-end mt-[1rem] bg-[#16171d]">
+        <header className="flex md:justify-center justify-end mt-[1rem]">
             <nav className="md:flex flex-row gap-4 text-sm md:text-lg lg:text-xl hidden bg-inherit">
                 <HeaderItem value= 'Languages & Tools' href='#Languages-&-Tools' />
                 <HeaderItem value= 'Projects' href='#Projects' />
