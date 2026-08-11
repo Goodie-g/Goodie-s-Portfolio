@@ -23,7 +23,7 @@ function Intro() {
                     >Godluck John Mbise</span>
                 </h1>
                 <h3 className="text-xl">Self Taught Frontend Developer.</h3>
-                <div className="flex flex-row gap-2 ">
+                <div className="flex flex-row gap-2 mt-[1rem]">
                     { contactIcons.map((contactIcon) => (
                         <a 
                             href={contactIcon.link}
