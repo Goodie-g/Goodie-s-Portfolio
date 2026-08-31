@@ -6,27 +6,6 @@
     }
 }
 
-/* Jersey Font */
-@font-face {
-  font-family: "Jersey";
-  src: url("./assets/fonts/Jersey20-Regular.ttf") format("truetype");
-}
-
-/* floating text animation */
-.floating-text {
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-6px);
-  }
-}
-
 :root {
   --text: #9ca3af;
   --text-h: #08060d;
@@ -102,7 +81,7 @@ h2 {
   color: var(--text-h);
 }
 
-h1 {
+/* h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
@@ -110,7 +89,7 @@ h1 {
     font-size: 36px;
     margin: 20px 0;
   }
-}
+} */
 h2 {
   font-size: 24px;
   line-height: 118%;
