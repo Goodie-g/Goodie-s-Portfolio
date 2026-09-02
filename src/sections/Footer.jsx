@@ -106,7 +106,7 @@ function Footer() {
             {/* Footer bar */}
             <div className="relative mt-20 border-t border-white/5 pt-6 text-center text-sm text-gray-500">
                 <p>
-                    <small>© {currentYear} Godluck John Mbise. All rights reserved.</small>
+                    <small>© {currentYear} GoodieDev. All rights reserved.</small>
                 </p>
             </div>
 
