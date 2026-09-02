@@ -24,7 +24,7 @@ function Hero() {
         {
             name: "Instagram profile",
             icon: <FaInstagram aria-hidden="true" />,
-            link: "https://www.instagram.com/goodie.dev/",
+            link: "https://www.instagram.com/goodiedev/",
             target: "_blank",
             rel: "noopener noreferrer"
         },

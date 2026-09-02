@@ -27,7 +27,7 @@ function Footer() {
         {
             name: "Instagram profile",
             icon: <FaInstagram aria-hidden="true" />,
-            link: "https://www.instagram.com/goodie.dev/",
+            link: "https://www.instagram.com/goodiedev/",
             target: "_blank",
             rel: "noopener noreferrer"
         },
@@ -73,7 +73,7 @@ function Footer() {
 
                 {/* Primary CTA */}
                 <a
-                    href="mailto:godluckjohnmbise@gmail.com"
+                    href="mailto:godlucmbise@gmail.com"
                     className="mt-8 inline-flex items-center gap-3 rounded-lg bg-[#58c4dc] px-7 py-3 font-medium text-[#16171d] transition-colors duration-300 hover:bg-[#8fe8f7] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d]"
                 >
                     <FaEnvelope aria-hidden="true" className="text-lg" />
