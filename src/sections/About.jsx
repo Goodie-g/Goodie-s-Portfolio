@@ -1,6 +1,28 @@
+import {
+  SiHtml5,
+  SiCss,
+  SiJavascript,
+  SiReact,
+  SiTailwindcss,
+  SiGit,
+  SiGithub,
+  SiVite
+} from "react-icons/si";
+
 import profileImg from "../assets/profile.jpg";
 
 function About() {
+    const skills = [
+        { name: "HTML5", icon: <SiHtml5 aria-hidden="true" /> },
+        { name: "CSS3", icon: <SiCss aria-hidden="true" /> },
+        { name: "JavaScript", icon: <SiJavascript aria-hidden="true" /> },
+        { name: "React", icon: <SiReact aria-hidden="true" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss aria-hidden="true" /> },
+        { name: "Git", icon: <SiGit aria-hidden="true" /> },
+        { name: "GitHub", icon: <SiGithub aria-hidden="true" /> },
+        { name: "Vite", icon: <SiVite aria-hidden="true" /> }
+    ];
+
     return (
         <section
             id="About"
@@ -45,7 +67,7 @@ function About() {
                     />
                 </figure>
 
-                {/* Bio */}
+                {/* Bio + Tools */}
                 <div className="max-w-xl text-center md:text-left">
                     <h2 className="text-2xl font-semibold tracking-tight text-white">
                         About me
@@ -56,13 +78,30 @@ function About() {
                         clean, responsive, and practical web experiences.
                     </p>
                     <p className="mt-4 leading-relaxed text-gray-400">
-                        My main focus is frontend development with JavaScript
-                        and React, while I'm continuing to expand into backend
-                        development and full-stack applications. Alongside
-                        personal projects and technical learning, I work
-                        directly with clients to design, develop, improve, and
-                        launch websites for their businesses and organizations.
+                        I work directly with businesses and organizations to
+                        design, build, and launch websites that help them grow
+                        — with a focus on quality, clear communication, and
+                        lasting results.
                     </p>
+
+                    {/* Languages & Tools */}
+                    <div className="mt-8">
+                        <h3 className="text-sm font-medium uppercase tracking-wider text-gray-500">
+                            Languages &amp; tools I work with
+                        </h3>
+                        <ul className="mt-4 flex flex-wrap justify-center md:justify-start gap-3 list-none m-0 p-0">
+                            {skills.map((skill) => (
+                                <li
+                                    key={skill.name}
+                                    className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-xl text-gray-400 transition-all duration-300 hover:border-[#58c4dc]/60 hover:text-[#58c4dc]"
+                                    title={skill.name}
+                                >
+                                    {skill.icon}
+                                    <span className="sr-only">{skill.name}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
 
             </div>

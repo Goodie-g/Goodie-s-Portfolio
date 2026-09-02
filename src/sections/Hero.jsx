@@ -5,7 +5,7 @@ import {
   FaWhatsapp
 } from "react-icons/fa6";
 
-function Intro() {
+function Hero() {
     const contactIcons = [
         {
             name: "GitHub profile",
@@ -40,7 +40,7 @@ function Intro() {
     return (
         <section
             aria-label="Introduction"
-            className="relative px-6 md:px-12 lg:px-16 pt-12 pb-24 md:pt-16 md:pb-28 overflow-hidden"
+            className="relative px-6 md:px-12 lg:px-16 pt-12 pb-10 md:pt-16 md:pb-14 overflow-hidden"
         >
 
             {/* Ambient glow — pulled inward, softened at edges */}
@@ -128,4 +128,4 @@ function Intro() {
     );
 }
 
-export default Intro;
+export default Hero;

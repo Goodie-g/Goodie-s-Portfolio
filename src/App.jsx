@@ -1,7 +1,8 @@
 import Header from './sections/Header'
-import Intro from './sections/Intro'
-import Stack from './sections/Stack'
+import Hero from './sections/Hero'
+import Services from './sections/Services'
 import Projects from './sections/Projects'
+import Process from './sections/Process'
 import About from './sections/About'
 import Footer from './sections/Footer'
 import './App.css'
@@ -20,9 +21,10 @@ function App() {
 
       <Header />
       <main id="main-content">
-        <Intro />
-        <Stack />
+        <Hero />
+        <Services />
         <Projects />
+        <Process />
         <About />
       </main>
       <Footer />

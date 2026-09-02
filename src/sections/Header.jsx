@@ -7,8 +7,9 @@ const Header = () => {
     const buttonRef = useRef(null);
 
     const navItems = [
-        { value: "Languages & Tools", href: "#Languages-&-Tools" },
+        { value: "Services", href: "#Services" },
         { value: "Projects", href: "#Projects" },
+        { value: "Process", href: "#Process" },
         { value: "About", href: "#About" }
     ];
 
