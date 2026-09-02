@@ -4,6 +4,12 @@
     html {
         scroll-behavior: smooth;
     }
+
+    /* Account for sticky header when jumping to anchor sections */
+    section[id],
+    footer[id] {
+        scroll-margin-top: 100px;
+    }
 }
 
 /* Screen reader only utility */
@@ -143,4 +149,3 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
-

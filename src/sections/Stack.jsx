@@ -25,7 +25,7 @@ function Stack() {
     <section
       id="Languages-&-Tools"
       aria-label="Languages and tools I use"
-      className="flex flex-col gap-2 justify-center mt-6"
+      className="flex flex-col gap-2 justify-center p-6"
     >
       <h2 className="text-xl block text-center">Languages and Tools</h2>
       <ul className="flex gap-2 justify-center list-none m-0 p-0">
