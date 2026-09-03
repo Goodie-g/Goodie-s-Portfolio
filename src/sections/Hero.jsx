@@ -64,15 +64,6 @@ function Hero() {
             {/* Hero Content */}
             <div className="relative mx-auto flex max-w-2xl flex-col items-center text-center">
 
-                {/* Availability badge */}
-                <span className="inline-flex items-center gap-2.5 rounded-full border border-[#58c4dc]/25 bg-[#58c4dc]/5 px-4 py-1.5 text-xs md:text-sm tracking-wide text-[#8fe8f7]">
-                    <span className="relative flex h-2 w-2" aria-hidden="true">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#58c4dc] opacity-60" />
-                        <span className="relative inline-flex h-2 w-2 rounded-full bg-[#58c4dc]" />
-                    </span>
-                    Available for freelance projects
-                </span>
-
                 <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1]">
                     I build modern websites for{" "}
                     <span className="bg-gradient-to-r from-[#8fe8f7] via-[#58c4dc] to-[#2f89a8] bg-clip-text text-transparent">
