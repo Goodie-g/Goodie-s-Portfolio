@@ -41,7 +41,7 @@
 :root {
   --text: #9ca3af;
   --text-h: #08060d;
-  --bg: #23272F;
+  --bg: rgb(35 39 47 / var(--tw-bg-opacity));
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
