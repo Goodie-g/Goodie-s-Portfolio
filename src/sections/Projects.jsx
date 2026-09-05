@@ -7,7 +7,7 @@ function Projects() {
         >
             <h2 className="text-2xl font-semibold tracking-tight text-center">Projects</h2>
             <p className="mt-4 text-center text-gray-400 max-w-md mx-auto">
-                Coming soon — I'm currently working on showcasing my best projects here.
+                Ignore this for now friends
             </p>
         </section>
     );
