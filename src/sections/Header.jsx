@@ -99,7 +99,7 @@ const Header = () => {
                         aria-expanded={isOpen}
                         aria-controls="mobile-menu"
                         aria-label={isOpen ? "Close main menu" : "Open main menu"}
-                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-lg text-gray-400 transition-all duration-300 hover:border-[#58c4dc]/60 hover:text-[#58c4dc] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d] md:hidden"
+                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-lg text-gray-400 transition-all duration-300  focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d] md:hidden"
                     >
                         <span
                             className={`transition-all duration-300 ease-in-out ${
