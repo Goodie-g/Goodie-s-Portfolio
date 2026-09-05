@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaWhatsapp
 } from "react-icons/fa6";
+import WorkWithMe from "../components/WorkWithMe";
 
 function Hero() {
     const contactIcons = [
@@ -73,14 +74,14 @@ function Hero() {
                     Available for freelance projects
                 </span>
 
-                <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1]">
+                <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
                     I build modern websites for{" "}
                     <span className="bg-gradient-to-r from-[#8fe8f7] via-[#58c4dc] to-[#2f89a8] bg-clip-text text-transparent">
                         businesses &amp; brands.
                     </span>
                 </h1>
 
-                <p className="mt-6 max-w-xl text-base md:text-lg leading-relaxed text-gray-400">
+                <p className="mt-8 max-w-l text-sm md:text-lg leading-relaxed text-gray-500">
                     I create responsive, custom websites with React and modern
                     web technologies — focused on clean design, performance,
                     and great user experiences.
@@ -88,18 +89,7 @@ function Hero() {
 
                 {/* CTA Buttons */}
                 <div className="mt-9 flex flex-col sm:flex-row items-center gap-4">
-                    <a
-                        href="#Contact"
-                        className="px-7 py-3 rounded-lg bg-[#58c4dc] text-[#16171d] font-medium transition-colors duration-300 hover:bg-[#8fe8f7] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d]"
-                    >
-                        Work With Me
-                    </a>
-                    <a
-                        href="#Projects"
-                        className="px-7 py-3 rounded-lg border border-[#58c4dc]/40 text-[#58c4dc] font-medium transition-colors duration-300 hover:border-[#58c4dc] hover:bg-[#58c4dc]/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d]"
-                    >
-                        View My Work
-                    </a>
+                    <WorkWithMe />
                 </div>
 
                 {/* Social Links */}

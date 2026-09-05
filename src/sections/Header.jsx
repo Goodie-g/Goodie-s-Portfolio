@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import WorkWithMe from "../components/WorkWithMe";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -85,12 +86,7 @@ const Header = () => {
                     </nav>
 
                     {/* Desktop CTA */}
-                    <a
-                        href="#Contact"
-                        className="hidden md:inline-flex rounded-lg bg-[#58c4dc] px-4 py-2 text-sm font-medium text-[#16171d] transition-colors duration-300 hover:bg-[#8fe8f7] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d]"
-                    >
-                        Work With Me
-                    </a>
+                    <WorkWithMe />
 
                     {/* Mobile toggle */}
                     <button
