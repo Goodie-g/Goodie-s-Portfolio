@@ -99,52 +99,112 @@ const Header = () => {
                         aria-expanded={isOpen}
                         aria-controls="mobile-menu"
                         aria-label={isOpen ? "Close main menu" : "Open main menu"}
-                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-lg text-gray-400 transition-all duration-300  focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d] md:hidden"
+                        className="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-lg text-gray-400 transition-all duration-300 hover:border-[#58c4dc]/60 hover:text-[#58c4dc] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d] md:hidden"
                     >
-                        <span
-                            className={`transition-all duration-300 ease-in-out ${
+                        {/* Menu icon */}
+                        <FiMenu
+                            aria-hidden="true"
+                            className={`absolute transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${
                                 isOpen
-                                    ? "rotate-90 scale-100 opacity-100"
+                                    ? "rotate-90 scale-50 opacity-0"
                                     : "rotate-0 scale-100 opacity-100"
                             }`}
-                        >
-                            {isOpen ? (
-                                <FiX aria-hidden="true" />
-                            ) : (
-                                <FiMenu aria-hidden="true" />
-                            )}
-                        </span>
+                        />
+
+                        {/* X icon */}
+                        <FiX
+                            aria-hidden="true"
+                            className={`absolute transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                                isOpen
+                                    ? "rotate-0 scale-100 opacity-100"
+                                    : "-rotate-90 scale-50 opacity-0"
+                            }`}
+                        />
                     </button>
                 </div>
 
                 {/* Mobile menu */}
-                {isOpen && (
-                    <nav
-                        ref={menuRef}
-                        id="mobile-menu"
-                        aria-label="Mobile navigation"
-                        className="absolute inset-x-0 top-full mt-2 flex flex-col gap-1 rounded-2xl border border-white/10 bg-[#16171d] p-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)] md:hidden"
+                <nav
+                    ref={menuRef}
+                    id="mobile-menu"
+                    aria-label="Mobile navigation"
+                    className={`
+                        absolute inset-x-0 top-full mt-2 origin-top
+                        rounded-2xl border border-white/10
+                        bg-[#16171d]/95 p-3
+                        shadow-[0_20px_50px_rgba(0,0,0,0.5)]
+                        backdrop-blur-xl
+                        transition-all duration-300
+                        ease-[cubic-bezier(0.4,0,0.2,1)]
+                        md:hidden
+                        ${
+                            isOpen
+                                ? "visible translate-y-0 scale-y-100 opacity-100"
+                                : "invisible pointer-events-none -translate-y-2 scale-y-95 opacity-0"
+                        }
+                    `}
+                >
+                    <ul className="m-0 flex list-none flex-col gap-1 p-0">
+                        {navItems.map((item, index) => (
+                            <li
+                                key={item.value}
+                                className={`
+                                    transition-all duration-300
+                                    ease-[cubic-bezier(0.4,0,0.2,1)]
+                                    ${
+                                        isOpen
+                                            ? "translate-x-0 translate-y-0 opacity-100"
+                                            : "-translate-x-2 translate-y-1 opacity-0"
+                                    }
+                                `}
+                                style={{
+                                    transitionDelay: isOpen
+                                        ? `${100 + index * 45}ms`
+                                        : "0ms",
+                                }}
+                            >
+                                <HeaderItem
+                                    value={item.value}
+                                    href={item.href}
+                                    onClick={() => setIsOpen(false)}
+                                />
+                            </li>
+                        ))}
+                    </ul>
+
+                    {/* CTA */}
+                    <a
+                        href="#Contact"
+                        onClick={() => setIsOpen(false)}
+                        className={`
+                            mt-2 block rounded-lg
+                            bg-[#58c4dc]
+                            px-4 py-2.5
+                            text-center text-sm font-medium
+                            text-[#16171d]
+                            transition-all duration-300
+                            ease-[cubic-bezier(0.4,0,0.2,1)]
+                            hover:bg-[#8fe8f7]
+                            focus:outline-none
+                            focus-visible:ring-2
+                            focus-visible:ring-[#58c4dc]
+                            focus-visible:ring-offset-2
+                            focus-visible:ring-offset-[#16171d]
+                            ${
+                                isOpen
+                                    ? "translate-y-0 opacity-100"
+                                    : "translate-y-2 opacity-0"
+                            }
+                        `}
+                        style={{
+                            transitionDelay: isOpen
+                                ? `${100 + navItems.length * 45 + 50}ms`
+                                : "0ms",
+                        }}
                     >
-                        <ul className="flex flex-col gap-1 list-none m-0 p-0">
-                            {navItems.map((item) => (
-                                <li key={item.value}>
-                                    <HeaderItem
-                                        value={item.value}
-                                        href={item.href}
-                                        onClick={() => setIsOpen(false)}
-                                    />
-                                </li>
-                            ))}
-                        </ul>
-                        <a
-                            href="#Contact"
-                            onClick={() => setIsOpen(false)}
-                            className="mt-2 rounded-lg bg-[#58c4dc] px-4 py-2.5 text-center text-sm font-medium text-[#16171d] transition-colors duration-300 hover:bg-[#8fe8f7] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d]"
-                        >
-                            Work With Me
-                        </a>
-                    </nav>
-                )}
+                        Work With Me
+                    </a>
+                </nav>
             </div>
         </header>
     );
