@@ -86,7 +86,9 @@ const Header = () => {
                     </nav>
 
                     {/* Desktop CTA */}
-                    <WorkWithMe />
+                    <div className="hidden md:block">
+                        <WorkWithMe />
+                    </div>
 
                     {/* Mobile toggle */}
                     <button

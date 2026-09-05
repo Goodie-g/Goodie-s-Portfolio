@@ -1,9 +1,11 @@
+import React from "react";
 import styled from "styled-components";
+import { FaEnvelope } from "react-icons/fa";
 
-const WorkWithMe = () => {
+const GetInTouch = () => {
   return (
     <StyledWrapper>
-      <a href="#Contact" className="button hidden md:block">
+      <a href="mailto:godlucmbise@gmail.com" className="button">
         <span className="button-bg">
           <span className="button-bg-layers">
             <span className="button-bg-layer layer-1" />
@@ -13,7 +15,8 @@ const WorkWithMe = () => {
         </span>
 
         <span className="button-inner">
-          <span className="button-text">Work With Me</span>
+          <FaEnvelope aria-hidden="true" className="button-icon" />
+          <span className="button-text">Get in Touch</span>
         </span>
       </a>
     </StyledWrapper>
@@ -27,12 +30,13 @@ const StyledWrapper = styled.div`
     align-items: center;
     justify-content: center;
 
-    height: 3rem;
-    padding: 0 1.75rem;
+    margin-top: 2rem;
+    padding: 0.75rem 1.75rem;
 
+    gap: 0.75rem;
+
+    border: none;
     border-radius: 0.5rem;
-
-    overflow: hidden;
 
     background: #58c4dc;
     color: #16171d;
@@ -42,12 +46,13 @@ const StyledWrapper = styled.div`
     font-weight: 500;
 
     text-decoration: none;
-
     cursor: pointer;
+
+    overflow: hidden;
     isolation: isolate;
   }
 
-  /* Background container */
+  /* Background */
   .button-bg {
     position: absolute;
     inset: 0;
@@ -57,13 +62,12 @@ const StyledWrapper = styled.div`
 
     background: #58c4dc;
 
-    z-index: -1;
+    z-index: 0;
   }
 
-  /* Large circles */
+  /* Wave container */
   .button-bg-layers {
     position: absolute;
-
     left: 50%;
     top: -65%;
 
@@ -73,6 +77,7 @@ const StyledWrapper = styled.div`
     transform: translateX(-50%);
   }
 
+  /* Base wave */
   .button-bg-layer {
     position: absolute;
     inset: 0;
@@ -82,77 +87,90 @@ const StyledWrapper = styled.div`
     transform: scale(0);
 
     transition:
-      transform 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+      transform 1.1s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
+  /* Deep blue */
   .layer-1 {
+    z-index: 1;
     background: #2878a8;
-    }
+  }
 
-    .layer-2 {
+  /* Indigo */
+  .layer-2 {
+    z-index: 2;
     background: #5368d8;
-    }
+  }
 
-    .layer-3 {
+  /* Violet */
+  .layer-3 {
+    z-index: 3;
     background: #9b6cff;
-    }
+  }
 
-  /* Text */
+  /* Button content */
   .button-inner {
     position: relative;
-    z-index: 2;
+    z-index: 5;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.75rem;
 
     pointer-events: none;
   }
 
   .button-text {
-    display: block;
-
     transition:
-      transform 1.2s cubic-bezier(0.19, 1, 0.22, 1),
-      color 0.4s ease;
+      transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
-  /* Hover */
+  .button-icon {
+    font-size: 1.125rem;
+
+    transition:
+      transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  /* Hover waves */
   .button:hover .layer-1 {
     transform: scale(1);
   }
 
   .button:hover .layer-2 {
-    transform: scale(1);
-
-    transition-delay: 0.1s;
+    transform: scale(1.15);
+    transition-delay: 0.08s;
   }
 
   .button:hover .layer-3 {
-    transform: scale(1);
-
-    transition-delay: 0.2s;
+    transform: scale(1.3);
+    transition-delay: 0.16s;
   }
 
+  /* Content */
   .button:hover .button-text {
-    color: #16171d;
-
     transform: translateY(-1px);
-
-    transition:
-      transform 0.8s cubic-bezier(0.19, 1, 0.22, 1),
-      color 0.4s ease;
   }
 
-  /* Keyboard accessibility */
+  .button:hover .button-icon {
+    transform: translateX(2px) rotate(-5deg);
+  }
+
+  /* Focus */
   .button:focus-visible {
     outline: 2px solid #58c4dc;
     outline-offset: 3px;
   }
 
-  /* Respect reduced motion */
+  /* Reduced motion */
   @media (prefers-reduced-motion: reduce) {
     .button-bg-layer,
-    .button-text {
+    .button-text,
+    .button-icon {
       transition: none;
     }
   }
 `;
 
-export default WorkWithMe;
+export default GetInTouch;
