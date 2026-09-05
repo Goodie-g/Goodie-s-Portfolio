@@ -93,7 +93,7 @@ function About() {
                             {skills.map((skill) => (
                                 <li
                                     key={skill.name}
-                                    className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-xl text-gray-400 transition-all duration-300 hover:border-[#58c4dc]/60 hover:text-[#58c4dc]"
+                                    className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-xl text-gray-400 transition-all duration-300 hover:scale-110 hover:border-[#58c4dc]/60 hover:text-[#58c4dc]"
                                     title={skill.name}
                                 >
                                     {skill.icon}
