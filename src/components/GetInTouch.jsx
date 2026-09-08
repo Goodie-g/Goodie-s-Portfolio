@@ -62,6 +62,10 @@ const StyledWrapper = styled.div`
     background: #58c4dc;
 
     z-index: 0;
+
+    /* Promote the clipping container to its own GPU layer so it
+       doesn't get created/destroyed on every hover toggle */
+    transform: translateZ(0);
   }
 
   /* Wave container */
@@ -87,6 +91,12 @@ const StyledWrapper = styled.div`
 
     transition:
       transform 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+
+    /* Keep each wave permanently on its own compositor layer so
+       rapid hover in/out doesn't repeatedly promote/demote it
+       (that churn is what causes the residue after many hovers) */
+    will-change: transform;
+    backface-visibility: hidden;
   }
 
   /* Deep blue */
@@ -138,12 +148,12 @@ const StyledWrapper = styled.div`
   }
 
   .button:hover .layer-2 {
-    transform: scale(1.15);
+    transform: scale(1);
     transition-delay: 0.08s;
   }
 
   .button:hover .layer-3 {
-    transform: scale(1.3);
+    transform: scale(1);
     transition-delay: 0.16s;
   }
 
