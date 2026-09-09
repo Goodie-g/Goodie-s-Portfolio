@@ -32,7 +32,7 @@ function Hero() {
         {
             name: "WhatsApp contact",
             icon: <FaWhatsapp aria-hidden="true" />,
-            link: "https://wa.me/255782897186",
+            link: "https://wa.me/255759019868",
             target: "_blank",
             rel: "noopener noreferrer"
         }
