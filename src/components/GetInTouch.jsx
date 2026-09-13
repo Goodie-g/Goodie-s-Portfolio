@@ -4,7 +4,7 @@ import { FaEnvelope } from "react-icons/fa";
 const GetInTouch = () => {
   return (
     <StyledWrapper>
-      <a href="mailto:godlucmbise@gmail.com" className="button">
+      <a href="mailto:godlucmbise@gmail.com"  className="button">
         <span className="button-bg">
           <span className="button-bg-layers">
             <span className="button-bg-layer layer-1" />
