@@ -58,7 +58,7 @@ function About() {
                     />
                     <img
                         src={profileImg}
-                        alt="Portrait of Godluck John Mbise, a frontend developer based in Dar es Salaam, Tanzania"
+                        alt="Portrait of Godluck John Mbise, a web developer based in Dar es Salaam, Tanzania"
                         width={240}
                         height={240}
                         loading="lazy"
@@ -73,15 +73,15 @@ function About() {
                         About me
                     </h2>
                     <p className="mt-4 leading-relaxed text-gray-400">
-                        I'm Goodie, a frontend developer and independent web
-                        developer based in Dar es Salaam. I enjoy turning ideas into
-                        clean, responsive, and practical web experiences.
+                        I'm Goodie, a web developer based in Dar es Salaam. I
+                        enjoy turning ideas into clean, responsive, and practical
+                        digital products.
                     </p>
                     <p className="mt-4 leading-relaxed text-gray-400">
                         I work directly with businesses and organizations to
-                        design, build, and launch websites that help them grow
-                        — with a focus on quality, clear communication, and
-                        lasting results.
+                        design, build, and launch everything from websites to
+                        full web applications — with a focus on quality, clear
+                        communication, and lasting results.
                     </p>
 
                     {/* Languages & Tools */}

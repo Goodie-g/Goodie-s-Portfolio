@@ -75,16 +75,16 @@ function Hero() {
                 </span>
 
                 <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
-                    I build modern websites for{" "}
+                    From landing pages to{" "}
                     <span className="bg-gradient-to-r from-[#8fe8f7] via-[#58c4dc] to-[#2f89a8] bg-clip-text text-transparent">
-                        businesses &amp; brands.
+                        custom business tools.
                     </span>
                 </h1>
 
                 <p className="mt-8 max-w-l text-sm md:text-lg leading-relaxed text-gray-500">
-                    I create responsive, custom websites with React and modern
-                    web technologies — focused on clean design, performance,
-                    and great user experiences.
+                    I build the web software your business needs — designed and
+                    developed with React and modern web technologies, focused on
+                    clean design, performance, and great user experiences.
                 </p>
 
                 {/* CTA Buttons */}

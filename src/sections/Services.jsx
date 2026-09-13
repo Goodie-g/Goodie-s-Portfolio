@@ -2,6 +2,7 @@ import {
   FaGlobe,
   FaPenNib,
   FaReact,
+  FaLayerGroup,
   FaMobileScreen,
   FaPlug,
   FaLanguage,
@@ -24,6 +25,12 @@ function Services() {
             icon: <FaPenNib aria-hidden="true" />
         },
         {
+            name: "Web Applications",
+            description:
+                "Interactive tools your customers or team use every day — booking systems, dashboards, portals, and MVPs.",
+            icon: <FaLayerGroup aria-hidden="true" />
+        },
+        {
             name: "React Development",
             description:
                 "Fast, interactive web experiences built with modern React — reliable, maintainable, and built to last.",
@@ -32,13 +39,13 @@ function Services() {
         {
             name: "Responsive & Mobile-Friendly",
             description:
-                "Your website will look and work beautifully on every device — phones, tablets, and desktops.",
+                "Your site or app will look and work beautifully on every device — phones, tablets, and desktops.",
             icon: <FaMobileScreen aria-hidden="true" />
         },
         {
             name: "API & Payment Integration",
             description:
-                "Secure integration of payment gateways, forms, and third-party services your business relies on.",
+                "Secure integration of APIs, payment gateways, forms, and third-party services your business relies on.",
             icon: <FaPlug aria-hidden="true" />
         },
         {
@@ -50,13 +57,13 @@ function Services() {
         {
             name: "Deployment & Hosting Setup",
             description:
-                "I handle the technical setup — hosting, domain, and SSL — so your site goes live smoothly and securely.",
+                "I handle the technical setup — hosting, domain, and SSL — so your project goes live smoothly and securely.",
             icon: <FaServer aria-hidden="true" />
         },
         {
             name: "Maintenance & Updates",
             description:
-                "Ongoing care after launch: updates, improvements, and support so your website stays fast and secure.",
+                "Ongoing care after launch: updates, improvements, and support so your product stays fast and secure.",
             icon: <FaShieldHalved aria-hidden="true" />
         }
     ];
@@ -88,8 +95,8 @@ function Services() {
                         What I can do for you
                     </h2>
                     <p className="mt-4 max-w-xl mx-auto leading-relaxed text-gray-400">
-                        From first idea to launch and beyond — I offer everything
-                        your business needs to succeed online.
+                        From first idea to launch and beyond — from landing
+                        pages to the custom tools your business runs on.
                     </p>
                 </div>
 
