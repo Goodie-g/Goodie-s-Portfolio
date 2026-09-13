@@ -1,6 +1,6 @@
-import ernizaPreview from "../assets/projects/erniza-preview.webp";
-import cargoSentinelPreview from "../assets/projects/cargo-sentinel-preview.webp";
-import carTrackerPreview from "../assets/projects/car-tracker-preview.webp";
+import ernizaPreview from "../assets/Projects/erniza-preview.webp";
+import cargoSentinelPreview from "../assets/Projects/cargo-sentinel-preview.webp";
+import carTrackerPreview from "../assets/Projects/car-tracker-preview.webp";
 
 function getDomain(url) {
     try {
