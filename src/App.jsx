@@ -1,10 +1,12 @@
 import Header from './sections/Header'
 import Hero from './sections/Hero'
 import Services from './sections/Services'
+import CaseStudy from './sections/CaseStudy'
 import Projects from './sections/Projects'
 import Process from './sections/Process'
 import About from './sections/About'
 import Footer from './sections/Footer'
+import { Analytics } from '@vercel/analytics/react';
 import './App.css'
 
 function App() {
@@ -23,11 +25,13 @@ function App() {
       <main id="main-content">
         <Hero />
         <Services />
+        <CaseStudy />
         <Projects />
         <Process />
         <About />
       </main>
       <Footer />
+      <Analytics />
     </>
   )
 }

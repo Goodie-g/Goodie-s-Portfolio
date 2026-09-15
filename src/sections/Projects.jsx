@@ -1,4 +1,3 @@
-import ernizaPreview from "../assets/Projects/erniza-preview.webp";
 import cargoSentinelPreview from "../assets/Projects/cargo-sentinel-preview.webp";
 import carTrackerPreview from "../assets/Projects/car-tracker-preview.webp";
 
@@ -83,18 +82,8 @@ function ProjectGroup({ label, projects }) {
 }
 
 function Projects() {
+    // Client work now gets the fuller treatment in the CaseStudy section above.
     // Add the e-commerce demo builds here once they're live.
-    const clientWork = [
-        {
-            title: "Erniza Africa Safaris",
-            description:
-                "A responsive tourism website built for a Tanzanian safari company to showcase safari packages, destinations, and travel experiences.",
-            tech: ["HTML", "CSS", "JavaScript"],
-            image: ernizaPreview,
-            url: "https://ernizaafricasafaris.com",
-        },
-    ];
-
     const experiments = [
         {
             title: "CargoSentinel",
@@ -122,18 +111,17 @@ function Projects() {
         >
             <div className="mx-auto max-w-6xl">
                 <h2 className="text-center text-2xl font-semibold tracking-tight">
-                    Projects
+                    More Projects
                 </h2>
 
                 <p className="mx-auto mt-3 max-w-lg text-center text-sm text-gray-400">
-                    A selection of client work and applications I've built.
+                    Experiments, hackathon builds, and things I've tinkered with.
                 </p>
 
-                <ProjectGroup label="Client work" projects={clientWork} />
                 <ProjectGroup label="Experiments & hackathons" projects={experiments} />
             </div>
         </section>
-            );
-        }
+    );
+}
 
-        export default Projects;
+export default Projects;
