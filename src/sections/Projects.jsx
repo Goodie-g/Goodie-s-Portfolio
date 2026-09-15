@@ -82,8 +82,6 @@ function ProjectGroup({ label, projects }) {
 }
 
 function Projects() {
-    // Client work now gets the fuller treatment in the CaseStudy section above.
-    // Add the e-commerce demo builds here once they're live.
     const experiments = [
         {
             title: "CargoSentinel",
