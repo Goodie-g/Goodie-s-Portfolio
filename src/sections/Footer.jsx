@@ -2,8 +2,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaInstagram,
-  FaWhatsapp,
-  FaEnvelope
+  FaWhatsapp
 } from "react-icons/fa6";
 import GetInTouch from "../components/GetInTouch";
 
