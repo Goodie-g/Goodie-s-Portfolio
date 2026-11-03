@@ -75,7 +75,7 @@ const Header = () => {
                         "
                     >
                         <img src="/GOODIE DEV BLUE.png" alt="GoodieDev" className="w-5 h-5 relative bottom-<-2>" />
-                        goodie<span className="text-[#58c4dc]">dev</span>
+                        <span>goodie<span className="text-[#58c4dc]">dev</span></span>
                     </a>
 
                     {/* Desktop nav */}
