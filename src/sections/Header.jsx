@@ -70,8 +70,11 @@ const Header = () => {
                     <a
                         href="#"
                         aria-label="Godluck John Mbise — Home"
-                        className="text-base font-semibold tracking-tight text-white transition-colors duration-300 hover:text-[#8fe8f7] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d] rounded-sm"
+                        className="text-base font-semibold tracking-tight text-white transition-colors duration-300 hover:text-[#8fe8f7] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#58c4dc] focus-visible:ring-offset-2 focus-visible:ring-offset-[#16171d] rounded-sm
+                        flex row gap-1
+                        "
                     >
+                        <img src="/GOODIE DEV BLUE.png" alt="GoodieDev" className="w-5 h-5 relative bottom-<-2>" />
                         goodie<span className="text-[#58c4dc]">dev</span>
                     </a>
 
