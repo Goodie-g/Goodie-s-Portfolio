@@ -6,6 +6,7 @@ import Projects from './sections/Projects'
 import Process from './sections/Process'
 import About from './sections/About'
 import Footer from './sections/Footer'
+import StarBackground from './components/StarBackground'
 import { Analytics } from '@vercel/analytics/react';
 import './App.css'
 
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+    <StarBackground />
       {/* Skip to main content link for keyboard navigation */}
       {/* <a
         href="#main-content"

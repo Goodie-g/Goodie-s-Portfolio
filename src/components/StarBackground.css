@@ -1,0 +1,37 @@
+.star-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #16171d;
+}
+
+.star {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: #dffaff;
+  box-shadow: 0 0 4px #58c4dc55;
+  animation: star-twinkle var(--duration) ease-in-out
+    var(--delay) infinite alternate;
+  will-change: opacity;
+}
+
+@keyframes star-twinkle {
+  from {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: .5;
+    transform: scale(1.4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star {
+    animation: none;
+  }
+}
