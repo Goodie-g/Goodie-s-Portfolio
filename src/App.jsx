@@ -14,7 +14,6 @@ function App() {
 
   return (
     <>
-    <StarBackground />
       {/* Skip to main content link for keyboard navigation */}
       {/* <a
         href="#main-content"
