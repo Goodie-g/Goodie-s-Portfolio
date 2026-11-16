@@ -1,6 +1,6 @@
 import cargoSentinelPreview from "../assets/Projects/cargo-sentinel-preview.webp";
 import carTrackerPreview from "../assets/Projects/car-tracker-preview.webp";
-import ernizaTmsPreview from "../assets/Projects/erniza-tms-preview.webp";
+import safariOpsPreview from "../assets/Projects/safariops-preview.webp";
 import matonyaFashionPreview from "../assets/Projects/matonya-fashion-preview.webp";
 
 function getDomain(url) {
@@ -102,11 +102,11 @@ function Projects() {
             url: "https://car-tracker-sigma-coral.vercel.app/",
         },
         {
-            title: "Erniza TMS",
-            description: "A web-based TMS platform built for Erniza.",
+            title: "Safari Ops",
+            description: "A web-based safari operations platform.",
             tech: ["React", "Express", "PGlite", "Docker / Render"],
-            image: ernizaTmsPreview,
-            url: "https://erniza-tms-demo.onrender.com/login",
+            image: safariOpsPreview,
+            url: "https://safariops-demo-e3la.onrender.com/",
         },
         {
             title: "Matonya Fashion",
