@@ -1,5 +1,7 @@
 import cargoSentinelPreview from "../assets/Projects/cargo-sentinel-preview.webp";
 import carTrackerPreview from "../assets/Projects/car-tracker-preview.webp";
+import ernizaTmsPreview from "../assets/Projects/erniza-tms-preview.webp";
+import matonyaFashionPreview from "../assets/Projects/matonya-fashion-preview.webp";
 
 function getDomain(url) {
     try {
@@ -82,7 +84,7 @@ function ProjectGroup({ label, projects }) {
 }
 
 function Projects() {
-    const experiments = [
+    const projects = [
         {
             title: "CargoSentinel",
             description:
@@ -99,6 +101,20 @@ function Projects() {
             image: carTrackerPreview,
             url: "https://car-tracker-sigma-coral.vercel.app/",
         },
+        {
+            title: "Erniza TMS",
+            description: "A web-based TMS platform built for Erniza.",
+            tech: ["React", "Express", "PGlite", "Docker / Render"],
+            image: ernizaTmsPreview,
+            url: "https://erniza-tms-demo.onrender.com/login",
+        },
+        {
+            title: "Matonya Fashion",
+            description: "An online fashion storefront for Matonya Fashion.",
+            tech: ["React", "Vite", "Tailwind CSS", "React Query", "Supabase"],
+            image: matonyaFashionPreview,
+            url: "https://matonya-fashion-demo.vercel.app/",
+        },
     ];
 
     return (
@@ -113,10 +129,10 @@ function Projects() {
                 </h2>
 
                 <p className="mx-auto mt-3 max-w-lg text-center text-sm text-gray-400">
-                    Experiments, hackathon builds, and things I've tinkered with.
+                    Experiments, hackathon builds, and other projects.
                 </p>
 
-                <ProjectGroup label="Experiments & hackathons" projects={experiments} />
+                <ProjectGroup label="Projects" projects={projects} />
             </div>
         </section>
     );
