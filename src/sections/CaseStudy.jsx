@@ -16,16 +16,6 @@ function getDomain(url) {
     }
 }
 
-// ---------------------------------------------------------------------
-// Case study data. Each entry can include `result` and `quote` — both
-// are optional and simply won't render until you fill them in, so the
-// section never shows placeholder text on the live site.
-//
-// TODO (Erniza): once you have real numbers or feedback, fill in:
-//   result: "e.g. Launched in March 2025 — the client reported a
-//            steady rise in inquiry emails within the first month."
-//   quote: { text: "...", name: "...", role: "Owner, Erniza Africa Safaris" }
-// ---------------------------------------------------------------------
 const caseStudies = [
     {
         title: "Erniza Africa Safaris",
@@ -33,7 +23,7 @@ const caseStudies = [
         image: ernizaPreview,
         tech: ["HTML", "CSS", "JavaScript"],
         ask:
-            "Erniza Africa Safaris needed a website that could present Tanzania's safaris, mountain treks, and destinations credibly to travelers researching a trip from abroad — clear enough to build confidence before anyone ever sends an inquiry.",
+            "Erniza Africa Safaris needed a website that could present Tanzania's safaris, mountain treks, and destinations credibly to travelers researching a trip from abroad and clear enough to build confidence before anyone ever sends an inquiry.",
         built:
             "A responsive, multi-page marketing site: a full-bleed imagery homepage, dedicated sections for safaris, mountain treks, and destinations, and clear calls-to-action guiding visitors toward booking. Built with HTML, CSS, and JavaScript, with a language switcher for international visitors.",
         result: null,

@@ -82,7 +82,7 @@ function Hero() {
                 </h1>
 
                 <p className="mt-8 max-w-l text-sm md:text-lg leading-relaxed text-gray-500">
-                    I build the web software your business needs — designed and
+                    I build the web software your business needs  designed and
                     developed with React and modern web technologies, focused on
                     clean design, performance, and great user experiences.
                 </p>

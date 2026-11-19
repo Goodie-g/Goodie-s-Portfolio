@@ -4,7 +4,7 @@ function Process() {
             number: "01",
             title: "Discovery",
             description:
-                "We discuss your goals, audience, content, and requirements — so the website is built around your business, not the other way around."
+                "We discuss your goals, audience, content, and requirements so the website is built around your business, not the other way around."
         },
         {
             number: "02",
@@ -22,7 +22,7 @@ function Process() {
             number: "04",
             title: "Launch",
             description:
-                "I handle deployment, domain configuration, SSL, and every technical detail — your site goes live smoothly."
+                "I handle deployment, domain configuration, SSL, and every technical detail."
         },
         {
             number: "05",
@@ -59,7 +59,7 @@ function Process() {
                         How I work
                     </h2>
                     <p className="mt-4 max-w-xl mx-auto leading-relaxed text-gray-400">
-                        A clear, straightforward process — you'll always know
+                        A clear, straightforward process so that you always know
                         what's happening and what comes next.
                     </p>
                 </div>

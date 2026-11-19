@@ -15,31 +15,31 @@ function Services() {
         {
             name: "Business Websites",
             description:
-                "Professional websites that build credibility and turn visitors into customers — tailored to your business goals.",
+                "Professional websites that build credibility and turn visitors into customers and are tailored to your business goals.",
             icon: <FaGlobe aria-hidden="true" />
         },
         {
             name: "Website Design & Redesign",
             description:
-                "Modern, clean designs that reflect your brand — or a fresh new look for your existing website.",
+                "Modern, clean designs that reflect your brand or a fresh new look for your existing website.",
             icon: <FaPenNib aria-hidden="true" />
         },
         {
             name: "Web Applications",
             description:
-                "Interactive tools your customers or team use every day — booking systems, dashboards, portals, and MVPs.",
+                "Interactive tools your customers or team use every day like booking systems, dashboards, portals, and MVPs.",
             icon: <FaLayerGroup aria-hidden="true" />
         },
         {
             name: "React Development",
             description:
-                "Fast, interactive web experiences built with modern React — reliable, maintainable, and built to last.",
+                "Fast, interactive web experiences built with modern React making them reliable, maintainable, and built to last.",
             icon: <FaReact aria-hidden="true" />
         },
         {
             name: "Responsive & Mobile-Friendly",
             description:
-                "Your site or app will look and work beautifully on every device — phones, tablets, and desktops.",
+                "Your site or app will look and work beautifully on every device.",
             icon: <FaMobileScreen aria-hidden="true" />
         },
         {
@@ -51,13 +51,13 @@ function Services() {
         {
             name: "Content & Localization",
             description:
-                "Clear, well-structured content that speaks to your audience — including multilingual support.",
+                "Clear, well-structured content that speaks to your audience including multilingual support.",
             icon: <FaLanguage aria-hidden="true" />
         },
         {
             name: "Deployment & Hosting Setup",
             description:
-                "I handle the technical setup — hosting, domain, and SSL — so your project goes live smoothly and securely.",
+                "I handle the technical setup, hosting, domain, and SSL so your project goes live smoothly and securely.",
             icon: <FaServer aria-hidden="true" />
         },
         {
@@ -95,7 +95,7 @@ function Services() {
                         What I can do for you
                     </h2>
                     <p className="mt-4 max-w-xl mx-auto leading-relaxed text-gray-400">
-                        From first idea to launch and beyond — from landing
+                        From first idea to launch and beyond, from landing
                         pages to the custom tools your business runs on.
                     </p>
                 </div>
