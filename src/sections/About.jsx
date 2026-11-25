@@ -73,7 +73,7 @@ function About() {
                         About me
                     </h2>
                     <p className="mt-4 leading-relaxed text-gray-400">
-                        I'm Goodie, a web developer based in Dar es Salaam. I
+                        I'm Godluck, a web developer based in Dar es Salaam. I
                         enjoy turning ideas into clean, responsive, and practical
                         digital products.
                     </p>
